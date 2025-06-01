@@ -298,15 +298,30 @@ footer a:hover {
     }
     
     .results-container {
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: visible;
+    }
+    
+    .result-box {
+        padding: 16px;
+        min-width: 33.33%;
+        text-align: center;
+    }
+    
+    .result-label {
+        font-size: 0.7rem;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .result-value {
+        font-size: 1.2rem;
+        text-align: center;
     }
     
     h1 {
         font-size: 2.5rem;
-    }
-    
-    .result-value {
-        font-size: 2rem;
     }
 }
 
