@@ -297,6 +297,42 @@ footer a:hover {
         flex-direction: column;
     }
     
+    .banner {
+        white-space: normal;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .banner-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 15px;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .banner-content span {
+        text-align: center;
+        line-height: 1.4;
+        display: inline;
+    }
+
+    .banner-content .learn-more {
+        display: inline;
+        margin-left: 8px;
+    }
+    
+    .growth-text {
+        white-space: normal;
+    }
+    
+    .growth-text::after {
+        content: '';
+        display: block;
+    }
+    
     .results-container {
         flex-direction: row;
         overflow-x: visible;
@@ -371,4 +407,8 @@ footer a:hover {
     font-family: 'TWKLausanne', sans-serif;
     font-weight: 300;
     color: #3F303A;
+}
+
+.growth-text {
+    white-space: nowrap;
 } 

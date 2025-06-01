@@ -120,7 +120,7 @@ const Calculator: React.FC = () => {
                 >
                     <div className="result-label">
                         <span className="icon">↗</span>
-                        X GROWTH
+                        <span className="growth-text">X GROWTH</span>
                     </div>
                     <div className="result-value">{xGrowth}</div>
                 </div>
