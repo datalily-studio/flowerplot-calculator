@@ -78,7 +78,9 @@ const Home: React.FC = () => {
 
             <div className="features-grid">
                 <div className="feature-card">
-                    <div className="feature-icon">↗</div>
+                    <div className="feature-icon">
+                        <img src="/icon-1-uncover-insights.svg" alt="Uncover Insights Icon" />
+                    </div>
                     <h3 className="feature-title">Automatically uncover insights from survey data</h3>
                     <p className="feature-description">
                         Find patterns and takeaways in survey data with help from AI that help you tell marketing stories that resonate.
@@ -86,7 +88,9 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="feature-card">
-                    <div className="feature-icon">↗</div>
+                    <div className="feature-icon">
+                        <img src="/icon-2-analyze-data.svg" alt="Analyze Data Icon" />
+                    </div>
                     <h3 className="feature-title">Analyze datasets in minutes with AI</h3>
                     <p className="feature-description">
                         Instantly pull insights for different audiences, like sales, product, and marketing teams, from your survey data.
@@ -94,7 +98,9 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="feature-card">
-                    <div className="feature-icon">↗</div>
+                    <div className="feature-icon">
+                        <img src="/icon-3-visualize.svg" alt="Visualize Data Icon" />
+                    </div>
                     <h3 className="feature-title">Create on-brand data visualizations</h3>
                     <p className="feature-description">
                         Build data visualizations that magically follow best practices using your brand identity to illustrate research findings.
@@ -102,7 +108,9 @@ const Home: React.FC = () => {
                 </div>
 
                 <div className="feature-card">
-                    <div className="feature-icon">↗</div>
+                    <div className="feature-icon">
+                        <img src="/icon-4-interactive.svg" alt="Interactive Data Icon" />
+                    </div>
                     <h3 className="feature-title">Share live interactive data</h3>
                     <p className="feature-description">
                         Embed data visualizations on webpages that instantly update or download high-res files for design.
