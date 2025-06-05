@@ -6,6 +6,7 @@ import logo from '../Datalily_Logos_Digital_Icon_Azure.svg';
 const Home: React.FC = () => {
     const [email, setEmail] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -35,9 +36,12 @@ const Home: React.FC = () => {
             });
 
             if (response.ok) {
-                // Clear form and show success message
                 setEmail('');
-                alert('Thank you for signing up!');
+                setShowSuccess(true);
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    setShowSuccess(false);
+                }, 5000);
             } else {
                 throw new Error('Submission failed');
             }
@@ -70,24 +74,30 @@ const Home: React.FC = () => {
                     Interested in joining the beta and getting updates on Flowerplot?
                 </p>
 
-                <form onSubmit={handleSubmit} className="email-signup">
-                    <input
-                        type="email"
-                        placeholder="EMAIL"
-                        className="email-input"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                        disabled={isSubmitting}
-                    />
-                    <button 
-                        type="submit" 
-                        className="signup-button"
-                        disabled={isSubmitting}
-                    >
-                        {isSubmitting ? 'SUBMITTING...' : 'STAY IN THE LOOP'}
-                    </button>
-                </form>
+                {showSuccess ? (
+                    <div className="success-message">
+                        <p>✨ Thank you for signing up! We'll keep you updated on Flowerplot's progress.</p>
+                    </div>
+                ) : (
+                    <form onSubmit={handleSubmit} className="email-signup">
+                        <input
+                            type="email"
+                            placeholder="EMAIL"
+                            className="email-input"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                            disabled={isSubmitting}
+                        />
+                        <button 
+                            type="submit" 
+                            className="signup-button"
+                            disabled={isSubmitting}
+                        >
+                            {isSubmitting ? 'SUBMITTING...' : 'STAY IN THE LOOP'}
+                        </button>
+                    </form>
+                )}
             </section>
 
             <img 
