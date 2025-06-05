@@ -36,8 +36,7 @@ const Home: React.FC = () => {
                     Automatically turn survey data into <span className="highlight">content-ready insights</span>
                 </h1>
                 <p className="hero-subtitle">
-                    Power research-driven marketing campaigns with AI-generated data analysis and 
-                    visualization in minutes, not weeks.
+                Turn survey results into revenue-driving campaigns with the first data storytelling tool built for content marketing teams.
                 </p>
 
                 <p className="beta-text">
@@ -83,7 +82,7 @@ const Home: React.FC = () => {
                     </div>
                     <h3 className="feature-title">Automatically uncover insights from survey data</h3>
                     <p className="feature-description">
-                        Find patterns and takeaways in survey data with help from AI that help you tell marketing stories that resonate.
+                        Instantly pull insights for different audiences, like sales, product, and marketing teams, from your survey data.
                     </p>
                 </div>
 
@@ -93,7 +92,7 @@ const Home: React.FC = () => {
                     </div>
                     <h3 className="feature-title">Analyze datasets in minutes with AI</h3>
                     <p className="feature-description">
-                        Instantly pull insights for different audiences, like sales, product, and marketing teams, from your survey data.
+                        Easily find patterns and takeaways in survey data with help from AI that help you tell marketing stories that resonate. No pivot tables required.
                     </p>
                 </div>
 
@@ -103,7 +102,7 @@ const Home: React.FC = () => {
                     </div>
                     <h3 className="feature-title">Create on-brand data visualizations</h3>
                     <p className="feature-description">
-                        Build data visualizations that magically follow best practices using your brand identity to illustrate research findings.
+                    Build data visualizations that magically follow data best practices using your brand identity to illustrate research findings.
                     </p>
                 </div>
 
