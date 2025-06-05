@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/Calculator.css';
 import logo from '../Datalily_Logos_Digital_Icon_Azure.svg';
+import { Link } from 'react-router-dom';
 
 const Calculator: React.FC = () => {
     const [initialValue, setInitialValue] = useState<string>('');
@@ -60,7 +61,7 @@ const Calculator: React.FC = () => {
             <div className="banner">
                 <div className="banner-content">
                     <span>WE'RE BUILDING A MARKET RESEARCH TOOL FOR MARKETERS</span>
-                    <a href="https://datalily.com" className="learn-more">LEARN MORE</a>
+                    <Link to="/" className="learn-more">LEARN MORE</Link>
                 </div>
             </div>
             

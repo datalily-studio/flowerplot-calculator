@@ -20,10 +20,10 @@
 }
 
 :root {
-    --primary-color: #DF5620;
-    --text-color: #3F303A;
-    --background-color: #F8F2EC;
-    --border-color: #3F303A;
+    --primary-color: #4F46E5;
+    --text-color: #2A2A55;
+    --background-color: #FAFAFA;
+    --border-color: #2A2A55;
     --inactive-tab-color: #94A3B8;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .banner {
-    background-color: #2D2326;
+    background-color: #4F46E5;
     color: white;
     padding: 10px 0;
     width: 100vw;
@@ -87,9 +87,9 @@
 
 h1 {
     font-size: 4rem;
-    color: var(--primary-color);
+    color: var(--text-color);
     margin-bottom: 20px;
-    padding-top:20px;
+    padding-top: 20px;
     font-weight: 600;
     text-align: center;
     font-family: 'TWKLausanne', sans-serif;
@@ -129,7 +129,7 @@ h1 {
 .input-group input {
     width: 100%;
     padding: 12px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--text-color);
     border-radius: 4px;
     font-size: 1rem;
     color: var(--text-color);
@@ -141,7 +141,7 @@ h1 {
     display: flex;
     gap: 0;
     margin-bottom: 0;
-    background: white;
+    background: #EBEDFD;
     padding: 0;
     border-radius: 16px 16px 0 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
@@ -160,7 +160,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     border-right: 1px solid var(--border-color);
-    background-color: #f8f2ec;
+    background-color: transparent;
 }
 
 .result-box:last-child {
@@ -186,7 +186,7 @@ h1 {
 }
 
 .result-box.active .result-value {
-    color: #df5620;
+    color: var(--primary-color);
 }
 
 .result-label {
@@ -215,11 +215,12 @@ h1 {
 }
 
 .explanation {
-    background: white;
+    background: #FAFAFA;
     padding: 30px;
     border-radius: 0 0 8px 8px;
     margin-bottom: 40px;
-    border: 1px solid #3F303A;
+    border: 1px solid var(--text-color);
+    border-top: 1px solid #2A2A55;
 }
 
 .explanation h3 {
@@ -266,7 +267,7 @@ footer {
     margin-top: 40px;
     margin-bottom: 80px;
     padding-top: 20px;
-    color: #3F303A;
+    color: var(--text-color);
     font-family: 'TWKLausanne', sans-serif;
     font-weight: 300;
     font-size: 0.85em;
@@ -284,7 +285,7 @@ footer p {
 }
 
 footer a {
-    color: #3F303A;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -381,7 +382,7 @@ footer a:hover {
     gap: 10px;
     font-family: 'TWKLausanne', sans-serif;
     font-weight: 300;
-    color: #3F303A;
+    color: #2A2A55;
 }
 
 .fraction {
@@ -390,23 +391,25 @@ footer a:hover {
     align-items: center;
     text-align: center;
     margin: 0 5px;
-    color: #3F303A;
+    color: #2A2A55;
 }
 
 .numerator {
-    border-bottom: 2px solid #3F303A;
+    border-bottom: 2px solid #2A2A55;
     padding: 0 5px 5px;
     margin-bottom: 5px;
+    color: #2A2A55;
 }
 
 .denominator {
     padding: 5px 5px 0;
+    color: #2A2A55;
 }
 
 .formula-text {
     font-family: 'TWKLausanne', sans-serif;
     font-weight: 300;
-    color: #3F303A;
+    color: #2A2A55;
 }
 
 .growth-text {

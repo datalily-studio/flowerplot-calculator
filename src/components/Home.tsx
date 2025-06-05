@@ -1,18 +1,143 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import '../styles/Home.css';
+import logo from '../Datalily_Logos_Digital_Icon_Azure.svg';
 
 const Home: React.FC = () => {
-  return (
-    <div className="App">
-      <div className="calculator-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh' }}>
-        <h1 style={{ fontSize: '3rem', marginBottom: '2rem' }}>Flowerplot</h1>
-        <Link to="/calculator" className="button" style={{ textDecoration: 'none', padding: '1rem 2rem', fontSize: '1.2rem' }}>
-          Go to Calculator
-        </Link>
-      </div>
-    </div>
-  );
+    const [email, setEmail] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            const portalId = '6976344';
+            const formGuid = '[YOUR_FORM_GUID]'; // Replace with your HubSpot form GUID
+
+            const response = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    fields: [
+                        {
+                            name: 'email',
+                            value: email
+                        }
+                    ],
+                    context: {
+                        pageUri: window.location.href,
+                        pageName: document.title
+                    }
+                })
+            });
+
+            if (response.ok) {
+                // Clear form and show success message
+                setEmail('');
+                alert('Thank you for signing up!');
+            } else {
+                throw new Error('Submission failed');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Sorry, there was an error. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
+    return (
+        <div className="home-container">
+            <nav className="nav-header">
+                <Link to="/" className="logo">
+                    <img src="/FLOWERPLOT-logo.png" alt="FLOWERPLOT" className="logo-image" />
+                </Link>
+            </nav>
+
+            <section className="hero-section">
+                <h1 className="hero-title">
+                    Automatically turn survey data into <span className="highlight">content-ready insights</span>
+                </h1>
+                <p className="hero-subtitle">
+                    Power research-driven marketing campaigns with AI-generated data analysis and 
+                    visualization in minutes, not weeks.
+                </p>
+
+                <p className="beta-text">
+                    Interested in joining the beta and getting updates on Flowerplot?
+                </p>
+
+                <form onSubmit={handleSubmit} className="email-signup">
+                    <input
+                        type="email"
+                        placeholder="EMAIL"
+                        className="email-input"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                        disabled={isSubmitting}
+                    />
+                    <button 
+                        type="submit" 
+                        className="signup-button"
+                        disabled={isSubmitting}
+                    >
+                        {isSubmitting ? 'SUBMITTING...' : 'STAY IN THE LOOP'}
+                    </button>
+                </form>
+            </section>
+
+            <img 
+                src="/flowerplot-header.png" 
+                alt="Flowerplot Survey Data Analysis Interface" 
+                className="demo-image"
+            />
+
+            <div className="features-grid">
+                <div className="feature-card">
+                    <div className="feature-icon">↗</div>
+                    <h3 className="feature-title">Automatically uncover insights from survey data</h3>
+                    <p className="feature-description">
+                        Find patterns and takeaways in survey data with help from AI that help you tell marketing stories that resonate.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <div className="feature-icon">↗</div>
+                    <h3 className="feature-title">Analyze datasets in minutes with AI</h3>
+                    <p className="feature-description">
+                        Instantly pull insights for different audiences, like sales, product, and marketing teams, from your survey data.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <div className="feature-icon">↗</div>
+                    <h3 className="feature-title">Create on-brand data visualizations</h3>
+                    <p className="feature-description">
+                        Build data visualizations that magically follow best practices using your brand identity to illustrate research findings.
+                    </p>
+                </div>
+
+                <div className="feature-card">
+                    <div className="feature-icon">↗</div>
+                    <h3 className="feature-title">Share live interactive data</h3>
+                    <p className="feature-description">
+                        Embed data visualizations on webpages that instantly update or download high-res files for design.
+                    </p>
+                </div>
+            </div>
+
+            <footer className="footer">
+                <p>Created by <a href="https://datalily.com">Datalily</a> – a women-owned content & research studio.</p>
+                <a href="https://www.datalily.com">
+                    <img src={logo} alt="Datalily Logo" className="footer-logo" />
+                </a>
+            </footer>
+        </div>
+    );
 };
 
 export default Home; 
