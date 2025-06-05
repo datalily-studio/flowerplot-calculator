@@ -103,6 +103,7 @@
     font-size: 0.9rem;
     color: #2A2A55;
     margin-bottom: 1.5rem;
+    line-height: 1.3em;
 }
 
 .features-grid {
@@ -178,6 +179,10 @@
         font-size: 2.5rem;
     }
 
+    .nav-header {
+        margin-bottom: 1.7em;
+    }
+
     .features-grid {
         grid-template-columns: 1fr;
     }
@@ -185,11 +190,21 @@
     .email-signup {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 8px;
     }
 
     .email-input {
         width: 100%;
-        max-width: 400px;
+        border-radius: 4px;
+    }
+
+    .signup-button {
+        width: 100%;
+        border-radius: 4px;
     }
 
     .demo-image {
