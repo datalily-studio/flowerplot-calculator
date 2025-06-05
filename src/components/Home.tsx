@@ -8,49 +8,19 @@ const Home: React.FC = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [showSuccess, setShowSuccess] = useState(false);
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-
-        try {
-            const portalId = '6976344';
-            const formGuid = '[YOUR_FORM_GUID]'; // Replace with your HubSpot form GUID
-
-            const response = await fetch(`https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    fields: [
-                        {
-                            name: 'email',
-                            value: email
-                        }
-                    ],
-                    context: {
-                        pageUri: window.location.href,
-                        pageName: document.title
-                    }
-                })
-            });
-
-            if (response.ok) {
-                setEmail('');
-                setShowSuccess(true);
-                // Hide success message after 5 seconds
-                setTimeout(() => {
-                    setShowSuccess(false);
-                }, 5000);
-            } else {
-                throw new Error('Submission failed');
-            }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Sorry, there was an error. Please try again later.');
-        } finally {
-            setIsSubmitting(false);
-        }
+        
+        // Simply show success message and clear form
+        setEmail('');
+        setShowSuccess(true);
+        setIsSubmitting(false);
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            setShowSuccess(false);
+        }, 5000);
     };
 
     return (
