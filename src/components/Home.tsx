@@ -33,7 +33,7 @@ const Home: React.FC = () => {
 
             <section className="hero-section">
                 <h1 className="hero-title">
-                    Automatically turn survey data into <span className="highlight">content-ready insights</span>
+                    Automatically turn survey data into <span className="highlight">marketing-ready insights</span>
                 </h1>
                 <p className="hero-subtitle">
                 Turn survey results into revenue-driving campaigns with the first data storytelling tool built for content marketing teams.
