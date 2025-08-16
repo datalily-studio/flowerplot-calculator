@@ -1,3 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-LightItalic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-BookItalic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-MediumItalic.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ginka Trial';
+    src: url('../fonts/GinkaTRIAL-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
 .home-container {
     max-width: 1200px;
     margin: 0 auto;
