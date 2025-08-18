@@ -2,70 +2,70 @@
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Light.otf') format('opentype');
+    src: url('../fonts/Ginka-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-LightItalic.otf') format('opentype');
+    src: url('../fonts/Ginka-LightItalic.otf') format('opentype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Book.otf') format('opentype');
+    src: url('../fonts/Ginka-Book.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-BookItalic.otf') format('opentype');
+    src: url('../fonts/Ginka-BookItalic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Regular.otf') format('opentype');
+    src: url('../fonts/Ginka-Regular.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Italic.otf') format('opentype');
+    src: url('../fonts/Ginka-Italic.otf') format('opentype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Medium.otf') format('opentype');
+    src: url('../fonts/Ginka-Medium.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-MediumItalic.otf') format('opentype');
+    src: url('../fonts/Ginka-MediumItalic.otf') format('opentype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-Bold.otf') format('opentype');
+    src: url('../fonts/Ginka-Bold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Ginka Trial';
-    src: url('../fonts/GinkaTRIAL-BoldItalic.otf') format('opentype');
+    src: url('../fonts/Ginka-BoldItalic.otf') format('opentype');
     font-weight: 700;
     font-style: italic;
 }
