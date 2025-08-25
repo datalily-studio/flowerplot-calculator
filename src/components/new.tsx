@@ -47,7 +47,7 @@ const New: React.FC = () => {
               muted 
               playsInline
             >
-              <source src="/Flowerplot_Web_Animation_1280.mp4" type="video/mp4" />
+              <source src="/Flowerplot_Web_Animation_1280_Compressed.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
