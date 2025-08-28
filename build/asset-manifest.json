@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4b99b78.css",
-    "main.js": "/static/js/main.2e9a105f.js",
+    "main.css": "/static/css/main.2b293d05.css",
+    "main.js": "/static/js/main.e96e098c.js",
     "static/js/453.ad0392c2.chunk.js": "/static/js/453.ad0392c2.chunk.js",
     "static/media/Ginka-MediumItalic.otf": "/static/media/Ginka-MediumItalic.eca2b95ed3148b0521f9.otf",
     "static/media/Ginka-BoldItalic.otf": "/static/media/Ginka-BoldItalic.52a6347fe8909a43743d.otf",
@@ -18,12 +18,12 @@
     "static/media/Ballinger Mono Regular.otf": "/static/media/Ballinger Mono Regular.da6c7e84ea0a8464c0fa.otf",
     "index.html": "/index.html",
     "static/media/Datalily_Logos_Digital_Icon_Azure.svg": "/static/media/Datalily_Logos_Digital_Icon_Azure.18d73cf9a22340e2c7fc324d42b9b018.svg",
-    "main.d4b99b78.css.map": "/static/css/main.d4b99b78.css.map",
-    "main.2e9a105f.js.map": "/static/js/main.2e9a105f.js.map",
+    "main.2b293d05.css.map": "/static/css/main.2b293d05.css.map",
+    "main.e96e098c.js.map": "/static/js/main.e96e098c.js.map",
     "453.ad0392c2.chunk.js.map": "/static/js/453.ad0392c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4b99b78.css",
-    "static/js/main.2e9a105f.js"
+    "static/css/main.2b293d05.css",
+    "static/js/main.e96e098c.js"
   ]
 }

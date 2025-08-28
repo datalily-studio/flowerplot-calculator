@@ -4,6 +4,7 @@ import Calculator from './components/Calculator';
 import Home from './components/Home';
 import Test from './components/Test';
 import New from './components/new';
+import Load from './components/Load';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/calculator" element={<Calculator />} />
         <Route path="/test" element={<Test />} />
         <Route path="/new" element={<New />} />
+        <Route path="/load" element={<Load />} />
       </Routes>
     </Router>
   );
